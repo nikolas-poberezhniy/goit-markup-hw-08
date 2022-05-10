@@ -1,0 +1,215 @@
+.hero {
+    background-color: $background-color;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bakground.jpg);
+
+    padding: 118px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 480px) {}
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0px;
+        max-width: 1600px;
+    }
+}
+
+.hero__content {
+    text-align: center;
+
+}
+
+.hero__title {
+    max-width: 360px;
+    font-size: calc(12px + 2.8vw);
+    line-height: 1.62;
+
+    font-weight: 900;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $general-color;
+
+    margin: 0px auto 30px auto;
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.modal__overlay {
+    padding: 0 15px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 30;
+
+}
+
+.modal__form {
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    // height: 581px;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+    }
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.modal__icon {
+    width: 18px;
+    height: 18px;
+    color: $primary-text-color;
+    position: absolute;
+    top: 29px;
+    left: 12px;
+}
+
+.modal__label {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.modal__input {
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+    cursor: pointer;
+
+    transition: outline 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid $accent-color;
+    }
+
+    &:hover+.modal__icon,
+    &:focus+.modal__icon {
+        color: $accent-color;
+    }
+}
+
+.modal__comment {
+    @extend .modal__input;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    /* color: rgba(117, 117, 117, 0.5); */
+    color: $secondary-text-color;
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.icon__close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: border;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    svg {
+        width: 11px;
+        height: 11px;
+    }
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.agreement {
+    line-height: 1.71;
+    font-size: 14px;
+    color: $secondary-text-color;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    // align-items: center;
+    // justify-content: center;
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.agreement__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $primary-text-color;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.agreement__checkbox {
+    appearance: none;
+
+    &:checked+.agreement__icon {
+
+        border: 2px solid $accent-color;
+
+        background-image: url('../images/svg/icon-check.svg');
+        background-size: contain;
+        background-origin: border-box;
+
+    }
+}
+
+.agreement__text {
+    color: $accent-color;
+    text-decoration: underline;
+}

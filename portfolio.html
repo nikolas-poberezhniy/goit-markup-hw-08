@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__content">
+            <nav class="navigation">
+                <a class="logo" href="./index.html">Web<span class="logo--header">Studio</span></a>
+
+                <ul class=" navigation__list">
+                    <li class="navigation__item"><a class=" navigation__link " href="./index.html">
+                            Cтудия</a></li>
+                    <li class="navigation__item"><a class=" navigation__link active" href="./portfolio.html">
+                            Портфолио</a></li>
+                    <li class="navigation__item"><a class=" navigation__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a class="contact__link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon">
+                            <use href="./images/symbol-defs-clean.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link" href="tel:+380961111111">
+                        <svg class="contact__icon">
+                            <use href="./images/symbol-defs-clean.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container ">
+                <h1 class="is-hidden">Наши проекты</h1>
+                <ul class="button__portfolio-set">
+                    <li>
+                        <input class="radio is-hidden" id="filter__all" type="radio" name="portfolio-filter"
+                            value="filter_all" checked>
+                        <label class="button-portfolio" for="filter__all">Все</label>
+                    </li>
+                    <li>
+                        <input class="radio is-hidden" id="filter__web" type="radio" name="portfolio-filter"
+                            value="filter_web">
+                        <label label class="button-portfolio" for="filter__web">Веб-сайты</label>
+                    </li>
+                    <li>
+                        <input class="radio is-hidden" id="filter__app" type="radio" name="portfolio-filter"
+                            value="filter_app">
+                        <label class="button-portfolio" for="filter__app">Приложения</label>
+                    </li>
+                    <li>
+                        <input class="radio is-hidden" id="filter__design" type="radio" name="portfolio-filter"
+                            value="filter_design">
+                        <label class="button-portfolio" for="filter__design">Дизайн</label>
+                    </li>
+                    <li>
+                        <input class="radio is-hidden" id="filter__marketing" type="radio" name="portfolio-filter"
+                            value="filter_marketing">
+                        <label class="button-portfolio" for="filter__marketing">Маркетинг</label>
+                    </li>
+
+                </ul>
+
+                <ul class="portfolio-card-set">
+                    <li class="portfolio-card" filter-web>
+                        <a class='' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-1.jpg" alt="Пример разработанного сайта"
+                                    width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Технокряк</h2>
+                                <p class="portfolio__filter-elem">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-design>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-2.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio__filter-elem">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-app>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-3.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Ресторан Seafood</h2>
+                                <p class="portfolio__filter-elem">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-marketing>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-4.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Проект Prime</h2>
+                                <p class="portfolio__filter-elem">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-app>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-5.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Проект Boxes</h2>
+                                <p class="portfolio__filter-elem">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-web>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-6.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                                <p class="portfolio__filter-elem">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-design>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-7.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Издание Limited Edition</h2>
+                                <p class="portfolio__filter-elem">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-marketing>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-8.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Проект LAB</h2>
+                                <p class="portfolio__filter-elem">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card" filter-web>
+                        <a class='link' href="">
+                            <div class="card__thumb">
+                                <img src="./images/portfolio/portfolio-9.jpg"
+                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                <div class="card__overlay">
+                                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-conten">
+                                <h2 class="portfolio__title">Growing Business</h2>
+                                <p class="portfolio__filter-elem">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container ">
+            <div>
+                <a class="logo" href="./index.html">Web<span class="logo--footer">Studio</span></a>
+                <address>
+                    <ul class="">
+                        <li class="footer__address"><a href="https://goo.gl/maps/DhrrBFXqZRxsjUwVA">г. Киев,
+                                пр-т Леси
+                                Украинки, 26</a>
+                        </li>
+                        <li class=" footer__contact"><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li class=" footer__contact"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="studio-social-media">
+                <p>присоединяйтесь</p>
+                <ul class="social-media">
+                    <li><a class="social-media__link--footer" href="">
+                            <svg class="social-media__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-media__link--footer" href="">
+                            <svg class="social-media__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-media__link--footer" href="">
+                            <svg class="social-media__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-media__link--footer" href="">
+                            <svg class="social-media__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <!-- <p class="feedback-label">Подпишитесь на рассылку</p> -->
+                <form class="subscribe__form">
+                    <label for="subscribe" class="subscribe__label">Подпишитесь на рассылку</label>
+                    <div class="subscribe__field">
+                        <input name="client-subscribe" id="subscribe" type="email" class="subscribe__input"
+                            placeholder="Email">
+                        <button type="submit" class="button--footer">
+                            Подписаться
+                            <svg class="subscribe__icon">
+                                <use href="./images/icons.svg#subscribe-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/filter.js"></script>
+</body>
+
+</html>
