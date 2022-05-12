@@ -21,34 +21,71 @@
 <body>
     <header class="header">
         <div class="container header__content">
-            <nav class="navigation">
-                <a class="logo" href="./index.html">Web<span class="logo--header">Studio</span></a>
 
-                <ul class=" navigation__list">
-                    <li class="navigation__item"><a class=" navigation__link " href="./index.html">
-                            Cтудия</a></li>
-                    <li class="navigation__item"><a class=" navigation__link active" href="./portfolio.html">
-                            Портфолио</a></li>
-                    <li class="navigation__item"><a class=" navigation__link" href="">Контакты</a></li>
+            <button class="menu-button" menu-button>
+                <svg>
+                    <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <div class=" header-navigation"><a class="logo" href="./index.html">Web<span
+                        class="logo--header">Studio</span></a>
+                <nav class="navigation ">
+                    <ul class=" navigation__list">
+                        <li class="navigation__item"><a class=" navigation__link " href="./index.html">
+                                Cтудия</a></li>
+                        <li class="navigation__item"><a class=" navigation__link active" href="./portfolio.html">
+                                Портфолио</a></li>
+                        <li class="navigation__item"><a class=" navigation__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="contact__list ">
+                    <li class="contact__item">
+                        <a class="contact__link" href="mailto:info@devstudio.com">
+                            <svg class="contact__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact__link" href="tel:+380961111111">
+                            <svg class="contact__icon">
+                                <use href="./images/symbol-defs-clean.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+                <div class="mobile-menu__content " mobile-menu>
+                    <nav class="mobile-navigation ">
+                        <ul class=" mobile-navigation__list">
+                            <li class="navigation__item"><a class=" mobile-navigation__link " href="./index.html">
+                                    Cтудия</a></li>
+                            <li class="navigation__item"><a class=" mobile-navigation__link active"
+                                    href="./portfolio.html">
+                                    Портфолио</a></li>
+                            <li class="navigation__item"><a class="mobile-navigation__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
 
-            <ul class="contact__list">
-                <li class="contact__item">
-                    <a class="contact__link" href="mailto:info@devstudio.com">
-                        <svg class="contact__icon">
-                            <use href="./images/symbol-defs-clean.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contact__item">
-                    <a class="contact__link" href="tel:+380961111111">
-                        <svg class="contact__icon">
-                            <use href="./images/symbol-defs-clean.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                    <ul class="mobile-contact__list">
+                        <li class="contact__item">
+                            <a class="contact__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="contact__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__social-item"><a href="">Instagram</a></li>
+                        <li class="mobile-menu__social-item"><a href="">Twitter</a></li>
+                        <li class="mobile-menu__social-item"><a href="">Facebook</a></li>
+                        <li class="mobile-menu__social-item"><a href="">LinkedIn</a></li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -86,10 +123,9 @@
 
                 <ul class="portfolio-card-set">
                     <li class="portfolio-card" filter-web>
-                        <a class='' href="">
+                        <a class='link' href="">
                             <div class="card__thumb">
-                                <img src="./images/portfolio/portfolio-1.jpg" alt="Пример разработанного сайта"
-                                    width="370" height="294">
+                                <img src="./images/portfolio/portfolio-1.jpg" alt="Пример разработанного сайта">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -106,7 +142,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-2.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -124,7 +160,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-3.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -141,7 +177,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-4.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -158,7 +194,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-5.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -175,7 +211,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-6.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -192,7 +228,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-7.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -209,7 +245,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-8.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -226,7 +262,7 @@
                         <a class='link' href="">
                             <div class="card__thumb">
                                 <img src="./images/portfolio/portfolio-9.jpg"
-                                    alt="Фотография постера баскетольной команды" width="370" height="294">
+                                    alt="Фотография постера баскетольной команды">
                                 <div class="card__overlay">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -247,68 +283,72 @@
 
     <footer class="footer">
         <div class="container ">
-            <div>
-                <a class="logo" href="./index.html">Web<span class="logo--footer">Studio</span></a>
-                <address>
-                    <ul class="">
-                        <li class="footer__address"><a href="https://goo.gl/maps/DhrrBFXqZRxsjUwVA">г. Киев,
-                                пр-т Леси
-                                Украинки, 26</a>
+            <div class="footer__container">
+                <div>
+                    <a class="logo" href="./index.html">Web<span class="logo--footer">Studio</span></a>
+                    <address>
+                        <ul class="">
+                            <li class="footer__address"><a href="https://goo.gl/maps/DhrrBFXqZRxsjUwVA">г. Киев,
+                                    пр-т Леси
+                                    Украинки, 26</a>
+                            </li>
+                            <li class=" footer__contact"><a href="mailto:info@example.com">info@example.com</a></li>
+                            <li class=" footer__contact"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="studio-social-media">
+                    <p>присоединяйтесь</p>
+                    <ul class="social-media">
+                        <li><a class="social-media__link--footer" href="">
+                                <svg class="social-media__icon">
+                                    <use href="./images/symbol-defs-clean.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class=" footer__contact"><a href="mailto:info@example.com">info@example.com</a></li>
-                        <li class=" footer__contact"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        <li><a class="social-media__link--footer" href="">
+                                <svg class="social-media__icon">
+                                    <use href="./images/symbol-defs-clean.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a class="social-media__link--footer" href="">
+                                <svg class="social-media__icon">
+                                    <use href="./images/symbol-defs-clean.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a class="social-media__link--footer" href="">
+                                <svg class="social-media__icon">
+                                    <use href="./images/symbol-defs-clean.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
+                <div class="subscribe">
+
+                    <form class="subscribe__form">
+                        <label for="subscribe" class="subscribe__label">Подпишитесь на рассылку</label>
+                        <div class="subscribe__field">
+                            <input name="client-subscribe" id="subscribe" type="email" class="subscribe__input"
+                                placeholder="Email">
+                            <button type="submit" class="button--footer">
+                                <div class="button--footer-content">Подписаться
+                                    <svg class="subscribe__icon">
+                                        <use href="./images/icons.svg#subscribe-icon"></use>
+                                    </svg></div>
+
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="studio-social-media">
-                <p>присоединяйтесь</p>
-                <ul class="social-media">
-                    <li><a class="social-media__link--footer" href="">
-                            <svg class="social-media__icon">
-                                <use href="./images/symbol-defs-clean.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li><a class="social-media__link--footer" href="">
-                            <svg class="social-media__icon">
-                                <use href="./images/symbol-defs-clean.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li><a class="social-media__link--footer" href="">
-                            <svg class="social-media__icon">
-                                <use href="./images/symbol-defs-clean.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li><a class="social-media__link--footer" href="">
-                            <svg class="social-media__icon">
-                                <use href="./images/symbol-defs-clean.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe">
-                <!-- <p class="feedback-label">Подпишитесь на рассылку</p> -->
-                <form class="subscribe__form">
-                    <label for="subscribe" class="subscribe__label">Подпишитесь на рассылку</label>
-                    <div class="subscribe__field">
-                        <input name="client-subscribe" id="subscribe" type="email" class="subscribe__input"
-                            placeholder="Email">
-                        <button type="submit" class="button--footer">
-                            Подписаться
-                            <svg class="subscribe__icon">
-                                <use href="./images/icons.svg#subscribe-icon"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
 
     </footer>
     <script src="./js/filter.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
