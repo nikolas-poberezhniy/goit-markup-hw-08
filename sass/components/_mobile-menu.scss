@@ -37,6 +37,7 @@
     &.active {
         color: $accent-color;
     }
+
 }
 
 .mobile-contact__list {
@@ -64,7 +65,7 @@
 .mobile-menu__social {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: starts;
     align-items: center;
 
 
