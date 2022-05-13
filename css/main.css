@@ -765,6 +765,12 @@ a:hover, a:focus {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__section-title {
+    text-align: center;
+  }
+}
+
 .advantages__content {
   font-size: 14px;
   line-height: 1.7;

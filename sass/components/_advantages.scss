@@ -4,6 +4,11 @@
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+
+    }
 }
 
 .advantages__content {
